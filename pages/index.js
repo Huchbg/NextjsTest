@@ -1,11 +1,12 @@
-import { Hero } from "../sections";
+import { Hero } from "../sections"
 
 const heroProps = {
-  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
+  image: { src: "/img/video.png", alt: "", width: 500, height: 840 },
   title: "Agency procurement, outsourced.",
   description: "Start the process here",
   ctaText: "Start",
-};
+  bgimage: "/img/background.png",
+}
 
 export default function Home() {
   return (
@@ -20,8 +21,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
       </div>
     </>
-  );
+  )
 }

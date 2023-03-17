@@ -12,17 +12,22 @@ import {
 
 export const Hero = ({ image, title, description, ctaText, ...props }) => {
   return (
-    <StyledContainer {...props}>
-      <StyledTextContainer>
-        <StyledTitle>{title}</StyledTitle>
-        <StyledDescription>{description}</StyledDescription>
-        <StyledCTAContainer>
-          <StyledGetStartedBtn>{ctaText}</StyledGetStartedBtn>
-        </StyledCTAContainer>
-      </StyledTextContainer>
-      <StyledImageContainer>
-        <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
-      </StyledImageContainer>
-    </StyledContainer>
+    <>
+   
+      <StyledContainer {...props}>
+        <StyledImageContainer>
+          <Image layout="intrinsic" src={image.src}  alt={image.alt} width={image.width} height={image.height} />
+        </StyledImageContainer>
+        <StyledTextContainer>
+          <StyledTitle>{title}</StyledTitle>
+          <StyledDescription>{description}</StyledDescription>
+          <StyledCTAContainer>
+            <StyledGetStartedBtn>{ctaText}</StyledGetStartedBtn>
+          </StyledCTAContainer>
+        </StyledTextContainer>
+        
+      
+      </StyledContainer>
+    </>
   );
 };

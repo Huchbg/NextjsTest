@@ -3,6 +3,12 @@ import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "
 
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   align-items: center;
+  justify-content: center;
+  @media (max-width: 1024px) {
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const StyledGetStartedBtn = styled((props) => <Button {...props} variant="contained" color="main" />)`
@@ -25,6 +31,9 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   width: 30%;
   margin-left: 11.125rem;
   font-family: sans-serif;
+  @media (max-width: 1024px) {
+    margin:0;
+  }
 `;
 
 export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
@@ -34,7 +43,10 @@ export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
   max-width: 32.03rem;
   max-height: 65rem;
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
+  
+  width: 30%;
+  @media (max-width: 1024px) {
+    margin:0;
+    width: 50%;
+  }
 `;
