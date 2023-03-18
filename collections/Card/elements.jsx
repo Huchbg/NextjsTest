@@ -3,19 +3,41 @@ import styled, { css } from "styled-components";
 
 export const StyledMainContainer=styled.div`
     display: flex;
-    height: 150px;
+    padding: 5px 10px;
     border-radius: 5px;
     align-items: center;
     background-color: #F0F0F0;
     width: 100%;
     border: 1px ;
+    
     &:hover{
         border: 1px solid #269dff;
         h2{
             color: #269dff;
             border-bottom: 2px solid #269dff;
         }
+        cursor: pointer;
     }
+    ${({ variant }) => {
+    switch (variant) {
+      case 'small':
+        return css`
+          width: 80%;
+          
+        `;
+      case 'medium':
+        return css`
+          width: 90%;
+        `;
+      case 'big':
+        return css`
+          width: 100%;
+        `;
+      default:
+        return '';
+    }
+  }}
+
 `
 
 export const StyledTextContainer=styled.div`
@@ -40,7 +62,7 @@ export const StyledHeading=styled.h2`
 `
 export const StyledParagraph=styled.p`
     margin: 0;
-    font-size: 20px;
+    font-size: 19px;
 `
 
 export const StyledBoldSpan=styled.span`

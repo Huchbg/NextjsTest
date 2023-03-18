@@ -36,6 +36,7 @@ export const StyledBigHed = styled((props) => <SectionBigHeading {...props} />)`
   text-align: center;
 `;
 export const StyledSmall = styled((props) => <SectionSubheading {...props} />)`
+  margin: 0;
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -80,5 +81,6 @@ export const StyledCardContainer=styled(({ ...props }) => <div {...props} />)`
   @media (max-width: 1024px) {
     padding: 0;
     width: 90%;
+    padding-top: 3rem;
   }
 `;

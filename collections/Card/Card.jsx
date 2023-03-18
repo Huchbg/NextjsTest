@@ -4,7 +4,7 @@ import { StyledMainContainer, StyledTextContainer,StyledImageContainer,StyledHea
 
 export const Card=({title,BeforeBold,Bold,AfterBold,variant,image})=>{
     return  (
-    <StyledMainContainer>
+    <StyledMainContainer variant={variant} >
         <StyledImageContainer>
         <Image layout="intrinsic" src={image.src}  alt={image.alt} width={image.width} height={image.height} />
         </StyledImageContainer>
