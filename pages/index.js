@@ -3,6 +3,8 @@ import { Hero } from "../sections"
 const heroProps = {
   image: { src: "/img/video.png", alt: "", width: 500, height: 840 },
   title: "Agency procurement, outsourced.",
+  titleM: "Managed agency selection",
+  titleS: "Stengthen your onboarding process",
   description: "Start the process here",
   ctaText: "Start",
   bgimage: "/img/background.png",

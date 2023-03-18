@@ -11,6 +11,9 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
   }
 `;
 
+
+
+
 export const StyledGetStartedBtn = styled((props) => <Button {...props} variant="contained" color="main" />)`
   margin-top: 4.375rem;
   padding-top: 0;
@@ -20,6 +23,16 @@ export const StyledGetStartedBtn = styled((props) => <Button {...props} variant=
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
+`;
+
+export const StyledBigHed = styled((props) => <SectionBigHeading {...props} />)`
+  margin: 0;
+  color: black;
+  text-align: center;
+`;
+export const StyledSmall = styled((props) => <SectionSubheading {...props} />)`
+  margin-bottom: 20px;
+  text-align: center;
 `;
 
 export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
@@ -44,9 +57,17 @@ export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)
   max-width: 32.03rem;
   max-height: 65rem;
   
-  width: 30%;
+  width: 25%;
   @media (max-width: 1024px) {
     margin:0;
     width: 50%;
   }
+`;
+
+export const StyledCardContainer=styled(({ ...props }) => <div {...props} />)`
+  color: black;
+  width: 30%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 `;
