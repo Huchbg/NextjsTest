@@ -2,11 +2,28 @@ import { Hero } from "../sections"
 
 const heroProps = {
   image: { src: "/img/video.png", alt: "", width: 500, height: 840 },
-  title: "Agency procurement, outsourced.",
   titleM: "Managed agency selection",
   titleS: "Stengthen your onboarding process",
-  description: "Start the process here",
-  ctaText: "Start",
+  cards: [
+    {
+      title: "Brief",
+      BeforeBold: "Complete",
+      Bold: " brief writing or simple guidance ",
+      AfterBold: "on what to include,we've got you covered.",
+    },
+    {
+      title: "Search",
+      BeforeBold: "In-depth agency search covering;",
+      Bold: " criteria matching",
+      AfterBold: ", door knocking and due-dilligence vetting.",
+    },
+    {
+      title: "Pitch",
+      BeforeBold: "Comprehensive",
+      Bold: " pitch management, ",
+      AfterBold: "including comms, diary management and pitch hosting.",
+    },
+  ],
   bgimage: "/img/background.png",
 }
 

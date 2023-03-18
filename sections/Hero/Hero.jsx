@@ -10,9 +10,10 @@ import {
   StyledImageContainer,
   StyledBigHed,
   StyledSmall,
+  StyledCardContainer
 } from "./elements";
 
-export const Hero = ({ image, title,titleM,titleS, description, ctaText, ...props }) => {
+export const Hero = ({ image,titleM,titleS,cards, ...props }) => {
   return (
     <>
     <StyledBigHed>{titleM}</StyledBigHed>
@@ -22,11 +23,9 @@ export const Hero = ({ image, title,titleM,titleS, description, ctaText, ...prop
         <StyledImageContainer>
           <Image layout="intrinsic" src={image.src}  alt={image.alt} width={image.width} height={image.height} />
         </StyledImageContainer>
-        <StyledTextContainer>
-          <div>
-            HElloWorld
-          </div>
-        </StyledTextContainer>
+        <StyledCardContainer>
+          
+        </StyledCardContainer>
       </StyledContainer>
     </>
   );
