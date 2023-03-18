@@ -19,12 +19,15 @@ export const StyledMainContainer=styled.div`
 `
 
 export const StyledTextContainer=styled.div`
-    
+    font-family: Poppins;
     width: 80%;
 `
 
 export const StyledImageContainer=styled.div`
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const StyledHeading=styled.h2`

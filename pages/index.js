@@ -11,7 +11,7 @@ const heroProps = {
       Bold: " brief writing or simple guidance ",
       AfterBold: "on what to include,we've got you covered.",
       variant: "small",
-      image: { src: "", alt: "img" },
+      image: { src: "/img/payment.png", alt: "img", width: 50, height: 50 },
     },
     {
       title: "Search",
@@ -19,7 +19,12 @@ const heroProps = {
       Bold: " criteria matching",
       AfterBold: ", door knocking and due-dilligence vetting.",
       variant: "medium",
-      image: { src: "", alt: "img" },
+      image: {
+        src: "/img/presentation.png",
+        alt: "img",
+        width: 50,
+        height: 50,
+      },
     },
     {
       title: "Pitch",
@@ -27,7 +32,7 @@ const heroProps = {
       Bold: " pitch management, ",
       AfterBold: "including comms, diary management and pitch hosting.",
       variant: "big",
-      image: { src: "", alt: "img" },
+      image: { src: "/img/work.png", alt: "img", width: 50, height: 50 },
     },
   ],
   bgimage: "/img/background.png",
