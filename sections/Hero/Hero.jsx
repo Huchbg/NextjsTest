@@ -10,7 +10,8 @@ import {
   StyledImageContainer,
   StyledBigHed,
   StyledSmall,
-  StyledCardContainer
+  StyledCardContainer,
+  StyledCard
 } from "./elements";
 
 export const Hero = ({ image,titleM,titleS,cards, ...props }) => {
@@ -24,7 +25,9 @@ export const Hero = ({ image,titleM,titleS,cards, ...props }) => {
           <Image layout="intrinsic" src={image.src}  alt={image.alt} width={image.width} height={image.height} />
         </StyledImageContainer>
         <StyledCardContainer>
-          
+          {cards.map((card)=>{
+            return (<StyledCard key={card.title} title={card.title} BeforeBold={card.BeforeBold} Bold={card.Bold} AfterBold={card.AfterBold} image={card.image} />)
+          })}
         </StyledCardContainer>
       </StyledContainer>
     </>

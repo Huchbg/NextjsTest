@@ -16,4 +16,4 @@ export const theme = {
   typography: {
     bigHeading: {},
   },
-};
+}

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
+import {Card} from "~/collections"
 
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   align-items: center;
@@ -11,6 +12,10 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
   }
 `;
 
+export const StyledCard = styled((props) => <Card {...props} />)`
+  margin: 0;
+  
+`;
 
 
 
@@ -60,14 +65,20 @@ export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)
   width: 25%;
   @media (max-width: 1024px) {
     margin:0;
-    width: 50%;
+    width: 40%;
   }
 `;
 
 export const StyledCardContainer=styled(({ ...props }) => <div {...props} />)`
   color: black;
-  width: 30%;
+  width: 40%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding-left: 10rem;
+  @media (max-width: 1024px) {
+    padding: 0;
+    width: 90%;
+  }
 `;
