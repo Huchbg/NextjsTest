@@ -12,6 +12,7 @@ export const Card=({title,Bold,variant,image,Text})=>{
         </StyledImageContainer>
         <StyledTextContainer>
         <StyledHeading>{title}</StyledHeading>
+
         <StyledParagraph>
         {Text.substring(0, boldTextIndex)}
         {Bold !== "" && <StyledBoldSpan>{Bold}</StyledBoldSpan>}
