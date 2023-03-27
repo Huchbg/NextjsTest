@@ -3,7 +3,7 @@ import Image from "next/image";
 import { StyledMainContainer, StyledTextContainer,StyledImageContainer,StyledHeading,StyledParagraph,StyledBoldSpan} from "./elements";
 
 export const Card=({title,Bold,variant,image,Text})=>{
-    
+    const useles= "no"
     const boldTextIndex = Bold !== "" ? Text.indexOf(Bold) : 0
     return  (
     <StyledMainContainer variant={variant} >
