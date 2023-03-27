@@ -14,7 +14,6 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
 
 export const StyledCard = styled((props) => <Card {...props} />)`
   margin: 0;
-  
 `;
 
 

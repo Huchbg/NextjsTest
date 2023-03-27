@@ -8,13 +8,13 @@ export const StyledMainContainer=styled.div`
     align-items: center;
     background-color: #F0F0F0;
     width: 100%;
-    border: 1px ;
+    border: 1px solid #F0F0F0;
     
     &:hover{
-        border: 1px solid #269dff;
+        border-color: #269dff;
         h2{
             color: #269dff;
-            border-bottom: 2px solid #269dff;
+            border-color:#269dff;
         }
         cursor: pointer;
     }

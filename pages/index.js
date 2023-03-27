@@ -7,17 +7,15 @@ const heroProps = {
   cards: [
     {
       title: "Brief",
-      BeforeBold: "Complete",
       Bold: " brief writing or simple guidance ",
-      AfterBold: "on what to include,we've got you covered.",
+      Text:"Complete brief writing or simple guidance on what to include,we've got you covered.",
       variant: "small",
       image: { src: "/img/payment.png", alt: "img", width: 50, height: 50 },
     },
     {
       title: "Search",
-      BeforeBold: "In-depth agency search covering;",
       Bold: " criteria matching",
-      AfterBold: ", door knocking and due-dilligence vetting.",
+      Text:"In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
       variant: "medium",
       image: {
         src: "/img/presentation.png",
@@ -28,9 +26,8 @@ const heroProps = {
     },
     {
       title: "Pitch",
-      BeforeBold: "Comprehensive",
       Bold: " pitch management, ",
-      AfterBold: "including comms, diary management and pitch hosting.",
+      Text:"Comprehensive pitch management, including comms, diary management and pitch hosting.",
       variant: "big",
       image: { src: "/img/work.png", alt: "img", width: 50, height: 50 },
     },

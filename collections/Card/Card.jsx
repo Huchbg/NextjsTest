@@ -2,7 +2,9 @@
 import Image from "next/image";
 import { StyledMainContainer, StyledTextContainer,StyledImageContainer,StyledHeading,StyledParagraph,StyledBoldSpan} from "./elements";
 
-export const Card=({title,BeforeBold,Bold,AfterBold,variant,image})=>{
+export const Card=({title,Bold,variant,image,Text})=>{
+    
+    const boldTextIndex = Bold !== "" ? Text.indexOf(Bold) : 0
     return  (
     <StyledMainContainer variant={variant} >
         <StyledImageContainer>
@@ -10,11 +12,14 @@ export const Card=({title,BeforeBold,Bold,AfterBold,variant,image})=>{
         </StyledImageContainer>
         <StyledTextContainer>
         <StyledHeading>{title}</StyledHeading>
+
         <StyledParagraph>
-            {BeforeBold}
+        {Text.substring(0, boldTextIndex)}
+        {Bold !== "" && <StyledBoldSpan>{Bold}</StyledBoldSpan>}
             <StyledBoldSpan>{Bold}</StyledBoldSpan>
-            {AfterBold}
+            {Text.substring(boldTextIndex + Bold.length)}
         </StyledParagraph>
+
         </StyledTextContainer>
     </StyledMainContainer>)
 }
